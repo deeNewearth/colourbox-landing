@@ -11,23 +11,16 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">NFTize your music</h1>
+        <h1 className="hero__title">Bringing power back to creators</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
 
         <div className={styles.buttons}>
         
-          <a
-            
-            className="button button--info button--lg"
-            href="https://app.colourbox.io">
-            Start Streaming 
-          </a>
-          
           
           <Link
             className="button button--secondary button--lg"
             to="/blog/colourbox-litepaper">
-            Learn More - 5min ⏱️
+            read the litepaper ⏱️
           </Link>
 
         </div>

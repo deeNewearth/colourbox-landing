@@ -1,6 +1,6 @@
 ---
-slug: colourbox-litepaper
-title: colourBox litepaper
+slug: decentralized-streaming-colourbox-litepaper
+title: decentralized streaming litepaper
 authors: [shreedee]
 tags: [litepaper, NFT, blockchain]
 ---

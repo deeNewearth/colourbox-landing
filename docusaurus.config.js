@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ColourBox',
-  tagline: '"de centralized" music streaming for everyone',
+  tagline: 'all in one monetization tool for creators.',
   url: 'https://colourbox.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -62,11 +62,11 @@ const config = {
             label: 'Getting started',
           },
           {to: '/blog', label: 'Resources', position: 'left'},
-          {
+          /*{
             href: 'https://app.colourbox.io',
             label: 'Start streaming',
             position: 'right',
-          },
+          },*/
         ],
       },
       footer: {

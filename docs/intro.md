@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Short Intro to ColourBox
+# Short Intro to Decetralized streaming by ColourBox 
 
-**ColourBox in less than 5 minutes**.
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2cNrlTidMPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
