@@ -1,5 +1,8 @@
 ---
-sidebar_position: 1
+slug: colourbox-litepaper
+title: ColourBox Litepaper
+authors: [mattG]
+tags: [litepaper, NFT, blockchain]
 ---
 
 # Colourbox Litepaper

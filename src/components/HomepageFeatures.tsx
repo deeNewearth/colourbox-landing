@@ -10,22 +10,22 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Artists - with ColourBox you are in control of your music',
+    title: 'Sell fans exclusive access to content, merchandise, services, communities, and events',
     image: '/img/ulabel.jpg',
     description: (
       <>
         <div className='text--left'>
-          <li>Sign up with your phone number, email, or crypto wallet</li>
-          <li>Upload your music</li>
-          <li>Tell your friends and fans to stream it from ColourBox.That way you keep "ALL" of your streaming earnings.</li>
-          <li>Use our "distribution" tools to PUSH your music to all major outlets like Spotify, Google Play</li>
-          <li>NFTize your track-- Slice your track into 1/10 sec.segments and put some (or all) of it for sale..You can use the funds to finish your mastering project, pay for that tour or just let your <span className='text--primary'>fans share your success</span></li>
+          <li>Content = music, audio files, photos, gifs, and videos</li>
+          <li>Merchandise = shirts, hoodies, hats, discounts, access to pre-sales, etc.</li>
+          <li>Services = Consulting, shoutouts, features, mixing and mastering, DJing, etc.</li>
+          <li>Communities = group chats, one on one chats with creators, etc.</li>
+          <li>Events = concerts, meet n greets, virtual, in-person, etc.</li>
         </div>
       </>
     ),
   },
   {
-    title: 'Built by musicians for musicians',
+    title: 'Built by creators for creators',
     image: '/img/undraw_docusaurus_tree.svg',
     description: (
       <>
