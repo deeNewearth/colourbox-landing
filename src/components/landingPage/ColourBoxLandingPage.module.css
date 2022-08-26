@@ -1,0 +1,28 @@
+.container_landing_page {
+    margin: 3rem 20rem;
+}
+
+.Flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+@media screen and (max-width: 360px) {
+    .container_landing_page {
+        margin: 3rem 0.2rem;
+    }
+
+    .Flex {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container_landing_page {
+        margin: 3rem 2rem;
+    }
+}
