@@ -14,16 +14,14 @@ export default function ColourBoxLandingPage(): JSX.Element {
 
                 <div className={styles.Flex}>
                     <Link
-                        className="button button--defualt button--md button-rounded"
+                        className={styles.button}
                         to="/blog/colourbox-litepaper"
-                        style={{color: "white"}}
                         >
                         Learn more
                     </Link>
                     {/* <Link
-                        className="button button--default button--md button-rounded"
+                        className={styles.button_gradient}
                         to=""
-                        style={{color: "white", backgroundImage: "linear-gradient(to right, #1BAFD0,#FD636B,#FFB900, #3BE8B0)"}}
                         >
                         Get Started
                     </Link> */}
