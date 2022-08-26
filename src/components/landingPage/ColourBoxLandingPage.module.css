@@ -1,5 +1,7 @@
 .container_landing_page {
-    margin: 3rem 20rem;
+    max-width: 750px;
+    text-align: center;
+    margin: 30px auto;
 }
 
 .Flex {
@@ -9,9 +11,27 @@
     column-gap: 30px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1024px) {
     .container_landing_page {
-        margin: 3rem 0.2rem;
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container_landing_page {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container_landing_page {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container_landing_page {
+        max-width: 300px;
     }
 
     .Flex {
@@ -21,8 +41,14 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 280px) {
     .container_landing_page {
-        margin: 3rem 2rem;
+        max-width: 200px;
+    }
+
+    .Flex {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
     }
 }

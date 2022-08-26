@@ -11,7 +11,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">Connectivity through exclusivity.</h1>
+        <h1>Connectivity through exclusivity.</h1>
       </div>
     </header>
   );
