@@ -19,22 +19,21 @@
   align-items: center;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 966px) {
   .heroBanner {
-    background-image: url('/static/img/colourbox_hero_image_2.png');
+    padding: 2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .heroBanner {
-    background-image: url('/static/img/colourbox_hero_image_2.png');
+    background-image: url('/static/img/colourbox_hero_image_3.png');
   }
 }
 
-
-@media screen and (max-width: 966px) {
+@media screen and (max-width: 360px) {
   .heroBanner {
-    padding: 2rem;
+    background-image: url('/static/img/colourbox_hero_image_3.png');
   }
 }
 

@@ -18,6 +18,7 @@
     font-weight: bold;
     border-radius: 25px;
     cursor: pointer;
+    color: #1BAFD0;
 }
 
 .button:hover {
