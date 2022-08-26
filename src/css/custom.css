@@ -27,9 +27,17 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-html[data-theme='dark']{
-  --ifm-background-color:rgb(15,23,42);
+html[data-theme='dark'] {
+  --ifm-background-color: rgb(15, 23, 42);
 
 }
 
+.button-mr {
+  margin-right: 10px;
+}
 
+.button-rounded {
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}

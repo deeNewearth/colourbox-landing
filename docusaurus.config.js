@@ -47,21 +47,26 @@ const config = {
         //disableSwitch: true
       },
       navbar: {
-        title: 'ColourBox',
-
         logo: {
           alt: 'ColourBox Logo',
-          src: 'img/logo.svg',
+          src: 'img/colourbox_logo_label.png',
         },
 
         items: [
+          { to: '/blog', label: 'RESOURCES', position: 'right' },
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
-            label: 'Getting started',
+            position: 'right',
+            label: 'FAQs',
           },
-          {to: '/blog', label: 'Resources', position: 'left'},
+          // { to: '/blog', label: 'CONTACT US', position: 'right' },
+          // {
+          //   to: 'https://rinkeby.staging.colourbox.io/',
+          //   label: 'GET STARTED',
+          //   position: 'right',
+          //   className: 'button button--default button--md button-mr button-rounded'
+          // },
           /*{
             href: 'https://app.colourbox.io',
             label: 'Start streaming',
@@ -112,7 +117,7 @@ const config = {
             ],
           },*/
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} New Earth Art & Tech LLC. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} New Earth Art & Tech LLC.`,
       },
       prism: {
         theme: lightCodeTheme,
