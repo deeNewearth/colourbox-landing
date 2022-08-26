@@ -21,13 +21,13 @@ export default function ColourBoxLandingPage(): JSX.Element {
                         >
                         Learn more
                     </Link>
-                    <Link
+                    {/* <Link
                         className="button button--default button--md button-rounded"
-                        to="https://rinkeby.staging.colourbox.io/"
-                        style={{color: "white"}}
+                        to=""
+                        style={{color: "white", backgroundImage: "linear-gradient(to right, #1BAFD0,#FD636B,#FFB900, #3BE8B0)"}}
                         >
                         Get Started
-                    </Link>
+                    </Link> */}
                 </div>
 
                 <div className="text--center" style={{marginTop: '3rem'}}>

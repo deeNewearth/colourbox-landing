@@ -60,13 +60,13 @@ const config = {
             position: 'right',
             label: 'FAQs',
           },
-          { to: '/blog', label: 'CONTACT US', position: 'right' },
-          {
-            to: 'https://rinkeby.staging.colourbox.io/',
-            label: 'GET STARTED',
-            position: 'right',
-            className: 'button button--default button--md button-mr button-rounded'
-          },
+          //{ to: '', label: 'CONTACT US', position: 'right' },
+          // {
+          //   to: '',
+          //   label: 'GET STARTED',
+          //   position: 'right',
+          //   className: 'button button--default button--md button-mr button-rounded'
+          // },
           /*{
             href: 'https://app.colourbox.io',
             label: 'Start streaming',
