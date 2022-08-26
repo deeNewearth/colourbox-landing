@@ -8,20 +8,26 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url('/static/img/close-up-audio-2.jpg');
+  background-image: url('/static/img/colourbox_hero_image.png');
   background-size: cover;
   background-repeat: no-repeat;
 
-  height: 90vh;
+  height: 50vh;
 
-  --ifm-hero-text-color: #efe8c2;
+  --ifm-hero-text-color: #ffffff;
   flex: 1;
   align-items: center;
 }
 
 @media screen and (max-width: 360px) {
   .heroBanner {
-    background-image: url('/static/img/close-up-audio-3.jpg');
+    background-image: url('/static/img/colourbox_hero_image_2.png');
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    background-image: url('/static/img/colourbox_hero_image_2.png');
   }
 }
 
@@ -39,7 +45,7 @@
   flex-wrap: wrap;
 }
 
-.buttons >a {
-      margin:0.2rem;
-  
+.buttons>a {
+  margin: 0.2rem;
+
 }

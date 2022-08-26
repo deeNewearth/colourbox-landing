@@ -7,7 +7,6 @@ export default function ColourBoxLandingPage(): JSX.Element {
         <>
             <div className={styles.container_landing_page}>
                 <div className="text--center">
-                    <h1>Connectivity through exclusivity.</h1>
                     <p>Colourbox makes it possible for supporters to buy exclusive access to their favorite creators content, 
                         merchandise, services, community, and events. Colourbox is the place where 
                         the super fan lives and thrives.</p>

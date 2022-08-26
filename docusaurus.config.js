@@ -60,9 +60,9 @@ const config = {
             position: 'right',
             label: 'FAQs',
           },
-          //{ to: '', label: 'CONTACT US', position: 'right' },
+          // { to: '/blog', label: 'CONTACT US', position: 'right' },
           // {
-          //   to: '',
+          //   to: 'https://rinkeby.staging.colourbox.io/',
           //   label: 'GET STARTED',
           //   position: 'right',
           //   className: 'button button--default button--md button-mr button-rounded'
