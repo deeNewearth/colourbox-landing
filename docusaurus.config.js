@@ -117,7 +117,7 @@ const config = {
             ],
           },*/
         ],
-        copyright: `© ${new Date().getFullYear()} by ColourBox.inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} New Earth Art & Tech LLC.`,
       },
       prism: {
         theme: lightCodeTheme,

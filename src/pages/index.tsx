@@ -9,7 +9,7 @@ import ColourBoxLandingPage from '../components/landingPage/ColourBoxLandingPage
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">Connectivity through exclusivity.</h1>
       </div>
