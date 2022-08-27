@@ -60,7 +60,7 @@ const config = {
             position: 'right',
             label: 'FAQs',
           },
-          // { to: '/blog', label: 'CONTACT US', position: 'right' },
+          { to: '/contact-us', label: 'CONTACT US', position: 'right' },
           // {
           //   to: 'https://rinkeby.staging.colourbox.io/',
           //   label: 'GET STARTED',

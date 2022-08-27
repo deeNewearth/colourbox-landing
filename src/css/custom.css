@@ -41,3 +41,41 @@ html[data-theme='dark'] {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 80%;
+  margin: 50px auto;
+  border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .responsive-iframe {
+    width: 80%;
+    height: 65%;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-iframe {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 540px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 280px) {
+  .responsive-iframe {
+    height: 60%;
+  }
+}
