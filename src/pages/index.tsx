@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import ColourBoxLandingPage from '../components/landingPage/ColourBoxLandingPage';
+import Head from '@docusaurus/Head';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -23,6 +24,10 @@ export default function Home(): JSX.Element {
     <Layout
       title={`${siteConfig.title} DeCentral`}
       description="decentralized music streaming with NFTs">
+      <Head>
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4373d697-5c9f-425e-a75a-b8c758154b53"> 
+        </script>
+      </Head>
       <HomepageHeader />
       <main>
         <ColourBoxLandingPage />
