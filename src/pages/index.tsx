@@ -5,14 +5,28 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import ColourBoxLandingPage from '../components/landingPage/ColourBoxLandingPage';
+import ColourboxLargeLogo from "../assets/colourbox-lg.svg";
 import Head from '@docusaurus/Head';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero', styles.heroBanner)}>
-      <div className="container">
-        <h1>Connectivity through exclusivity.</h1>
+      
+      <div className="container" style={{zIndex:2}}>
+        <ColourboxLargeLogo/>
+        <h1>Empowering creators and their communities.</h1>
+      </div>
+      <div style={{position:"absolute",marginTop:"-40vw"}}>
+        <div className={styles.bubble}/>
+        <div className={styles.bubbleSmall} style={{ marginLeft: "36rem" }} />
+        <div className={styles.bubbleReverse} style={{ marginTop: "26rem" }}/>
+        <div className={styles.bubbleSmallReverse} style={{ marginLeft: "16rem"}}/>
+      </div>
+      
+      <div style={{marginLeft:"70vw", position:"absolute", marginTop:"-40vw"}}>
+          <div className={styles.bubbleReverse} style={{ float:"right"}} />
+      <div className={styles.bubbleReverse} style={{float:"right",marginTop:"13rem",minWidth:"40rem",minHeight:"40rem" }} />
       </div>
     </header>
   );
