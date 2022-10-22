@@ -1,47 +1,53 @@
 import Link from '@docusaurus/Link';
-import React from 'react';
+import clsx from 'clsx';
+import React, { useState } from 'react';
 import styles from './ColourBoxLandingPage.module.css';
 
 export default function ColourBoxLandingPage(): JSX.Element {
-    return(
+    const [kind, selectKind] = useState<string>();
+    return (
         <>
             <div className={styles.container_landing_page}>
                 <div className="text--center">
-                    <p>Colourbox makes it possible for supporters to buy exclusive access to their favorite creators content, 
-                        merchandise, services, community, and events. Colourbox is the place where 
-                        the super fan lives and thrives.</p>
+                    <div style={{ margin: "2rem 0px" }}>
+                        <h2>What kind of creator are you?</h2>
+                        <div className={styles.Flex}>
+                            <h3>I am a</h3>
+                            <select className={styles.select} onChange={(e) => selectKind(e.target.value)}>
+                                <option></option>
+                                <option value="dj">DJ</option>
+                            </select>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div className={styles.Flex}>
-                    <Link
-                        className={styles.button}
-                        to="/blog/colourbox-litepaper"
-                        >
-                        Learn more
-                    </Link>
-                    {/* <Link
-                        className={styles.button_gradient}
-                        to=""
-                        >
-                        Get Started
-                    </Link> */}
-                </div>
+                {kind && (
+                    <>
+                        <div className="text--center">
+                            <h1>
+                                Services we offer
+                            </h1>
+                        </div>
+                        <div className={clsx(styles.Flex, styles.container)}>
+                            <img src="/img/people.png" style={{ maxWidth: "400px" }} />
 
-                <div className="text--center" style={{marginTop: '3rem'}}>
-                    <h1>What makes us special?</h1>
-                    <p>Unlike existing creator monetization platforms, with Colourbox supporters have true ownership of the 
-                        exclusive access they buy from creators.This means that the fan can choose to resell their exclusive 
-                        access if there is enough demand for it, much like artwork.</p>
-                </div>
+                            <div className="text--center" style={{ marginTop: '3rem' }}>
+                                <h1><u>Song request access</u></h1>
+                                <p>Make it easy for fans to buy the exclusive access to request songs from you.</p>
+                                <Link to="/" className={styles.button}>Learn more</Link>
+                            </div>
+                        </div>
+                        <div className={clsx(styles.Flex, styles.container)}>
+                            <img src="/img/people.png" style={{ maxWidth: "400px" }} />
 
-                <div className="text--center" style={{marginTop: '3rem'}}>
-                    <h1>What is our mission?</h1>
-                    <p>Our mission is to allow creators to earn a meaningful income directly from their fanbase and supporters 
-                        in a way that is also beneficial for supporters. This is important because it allows the creator to 
-                        freely make the content they want to make and not have to worry about the opinions of a 3rd party.
-                        It also creates more incentive for the supporter to grow with their favorite creator and stick with 
-                        them through the journey.</p>
-                </div>
+                            <div className="text--center" style={{ marginTop: '3rem' }}>
+                                <h1><u>Guest list access</u></h1>
+                                <p>Make it easy for fans to buy the exclusive access to be on your guest list.</p>
+                                <Link to="/" className={styles.button}>Learn more</Link>
+                            </div>
+                        </div></>
+                )}
             </div>
         </>
     )
