@@ -49,7 +49,7 @@ export default function Home(): JSX.Element {
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
-        spaceBetween={30}
+        effect={"fade"}
         mousewheel={true}
         modules={[EffectFlip, Mousewheel]}
         className="mySwiper"
