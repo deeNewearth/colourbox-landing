@@ -53,14 +53,18 @@ const config = {
         },
 
         items: [
-          { to: '/blog', label: 'RESOURCES', position: 'right' },
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'right',
-            label: 'FAQs',
+            to: "/",
+            label: "Explore as a fan",
+            className: "button",
+            position:"right"
           },
-          { to: '/contact-us', label: 'CONTACT US', position: 'right' },
+          {
+            to: "/",
+            label: "Sign up as a creator",
+            className: "button success-btn",
+            position:"right"
+          },
           // {
           //   to: 'https://rinkeby.staging.colourbox.io/',
           //   label: 'GET STARTED',

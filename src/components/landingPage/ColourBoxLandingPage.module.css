@@ -45,6 +45,22 @@
     color: #ffffff;
 }
 
+.alertBtn {
+    border-color: #FD636B;
+}
+
+.alertBtn:hover {
+    background-color: #FD636B;
+}
+
+.warningBtn {
+    border-color: #FFB900;
+}
+
+.warningBtn:hover {
+    background-color: #FFB900;
+}
+
 .button_gradient {
     background-image: linear-gradient(to right, #1BAFD0, #FD636B, #FFB900, #3BE8B0);
     padding: 8px 20px;
