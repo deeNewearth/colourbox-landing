@@ -6,8 +6,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import ColourBoxLandingPage from '../components/landingPage/ColourBoxLandingPage';
 import ColourboxLargeLogo from "../assets/colourbox-lg.svg";
+import ChevronDown from "../assets/chevron-down.svg";
 import Head from '@docusaurus/Head';
-import { Swiper, SwiperSlide,useSwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import "swiper/css/effect-flip";
 import {Mousewheel, EffectCreative} from "swiper";
@@ -21,6 +22,7 @@ function HomepageHeader() {
         <ColourboxLargeLogo />
         <h1>Empowering creators and their communities.</h1>
       </div>
+
       <div style={{ position: "absolute", marginTop: "-40vw" }}>
         <div className={styles.bubble} />
         <div className={styles.bubbleSmall} style={{ marginLeft: "36rem" }} />
@@ -32,6 +34,10 @@ function HomepageHeader() {
         <div className={styles.bubbleReverse} style={{ float: "right" }} />
         <div className={styles.bubbleReverse} style={{ float: "right", marginTop: "13rem", minWidth: "40rem", minHeight: "40rem" }} />
       </div>
+        <div style={{ position: "absolute", bottom:"2rem", left:"50%", marginBottom:"0.2rem", marginLeft:"-20px"}}>
+            <p style={{margin:"0.6rem"}}>Scroll</p>
+            <ChevronDown/>
+        </div>
     </header>
   );
 }
