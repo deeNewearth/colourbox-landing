@@ -41,7 +41,8 @@
   z-index: 1;
   min-height: 30rem;
   min-width: 30rem;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752,
+      #e73c7e);
   background-size: 400% 400%;
   -webkit-animation: circleAround 12s linear infinite, gradient 8s ease infinite;
   animation: circleAround 12s linear infinite,
@@ -56,7 +57,8 @@
   min-height: 10rem;
   min-width: 10rem;
   background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752,
-      #e73c7e);
+      #e73c7e, #23a6d5,
+      #23d5ab, );
   background-size: 400% 400%;
   -webkit-animation: circleAround 7s linear infinite, gradient 8s ease infinite;
   animation: circleAround 7s linear infinite,
@@ -70,7 +72,8 @@
   z-index: 1;
   min-height: 30rem;
   min-width: 30rem;
-  background: linear-gradient(-45deg, #e73c7e, #ee7752, #fff, #23d5ab, #23a6d5);
+  background: linear-gradient(-45deg, #e73c7e, #ee7752, #fff, #23d5ab, #23a6d5, #23d5ab,
+      #ee7752);
   background-size: 400% 400%;
   -webkit-animation: reverseCircleAround 23s linear infinite, gradient 8s ease infinite;
   animation: reverseCircleAround 23s linear infinite,

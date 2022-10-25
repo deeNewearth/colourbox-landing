@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -10,8 +10,7 @@ import ChevronDown from "../assets/chevron-down.svg";
 import Head from '@docusaurus/Head';
 import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import "swiper/css/effect-flip";
-import {Mousewheel, EffectCreative} from "swiper";
+import { Mousewheel, EffectCreative } from "swiper";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -27,48 +26,49 @@ function HomepageHeader() {
         <div className={styles.bubble} />
         <div className={styles.bubbleSmall} style={{ marginLeft: "36rem" }} />
         <div className={styles.bubbleReverse} style={{ marginTop: "26rem" }} />
-        <div className={styles.bubbleSmallReverse} style={{ marginLeft: "16rem" }} />
+        <div className={styles.bubbleReverse} style={{ marginLeft: "-16rem", marginTop: "-24rem", maxHeight: "3rem", maxWidth: "3rem" }} />
       </div>
 
       <div style={{ marginLeft: "70vw", position: "absolute", marginTop: "-40vw" }}>
         <div className={styles.bubbleReverse} style={{ float: "right" }} />
+        <div className={styles.bubbleSmallReverse} style={{ float: "right", marginRight: "12rem", marginTop: "-20rem" }} />
         <div className={styles.bubbleReverse} style={{ float: "right", marginTop: "13rem", minWidth: "40rem", minHeight: "40rem" }} />
       </div>
-        <div style={{ position: "absolute", bottom:"2rem", left:"50%", marginBottom:"0.2rem", marginLeft:"-20px"}}>
-            <p style={{margin:"0.6rem"}}>Scroll</p>
-            <ChevronDown/>
-        </div>
+      <div style={{ position: "absolute", bottom: "2rem", left: "50%", marginBottom: "0.2rem", marginLeft: "-20px" }}>
+        <p style={{ margin: "0.6rem" }}>Scroll</p>
+        <ChevronDown />
+      </div>
     </header>
   );
 }
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
-  const [isScrollableSlide,setIsScrollableSlide] = useState<boolean>();
+  const [isScrollableSlide, setIsScrollableSlide] = useState<boolean>();
   const swiperSlide = useSwiperSlide();
   return (
-          <Layout
-              title={`${siteConfig.title} DeCentral`}
-              description="decentralized music streaming with NFTs">
-              <Head>
-                  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4373d697-5c9f-425e-a75a-b8c758154b53">
-                  </script>
-              </Head>
-              <Swiper
-                  effect={"creative"}
-                  direction={"vertical"}
-                  creativeEffect={{
-                      prev: {
-                          shadow: true,
-                          translate: [0, 0, -400]
-                      },
-                      next: {
-                          translate: ["100%", 0, 0]
-                      }
-              }}
-                  
-          mousewheel={true}
-          modules={[EffectCreative, Mousewheel]}
+    <Layout
+      title={`${siteConfig.title} DeCentral`}
+      description="decentralized music streaming with NFTs">
+      <Head>
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4373d697-5c9f-425e-a75a-b8c758154b53">
+        </script>
+      </Head>
+      <Swiper
+        effect={"creative"}
+        direction={"vertical"}
+        creativeEffect={{
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400]
+          },
+          next: {
+            translate: ["100%", 0, 0]
+          }
+        }}
+
+        mousewheel={true}
+        modules={[EffectCreative, Mousewheel]}
         className="mySwiper"
       >
         <SwiperSlide>
