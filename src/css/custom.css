@@ -60,6 +60,7 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  overflow: auto;
 }
 
 .swiper-slide img {

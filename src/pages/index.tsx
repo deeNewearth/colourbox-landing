@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -7,10 +7,10 @@ import styles from './index.module.css';
 import ColourBoxLandingPage from '../components/landingPage/ColourBoxLandingPage';
 import ColourboxLargeLogo from "../assets/colourbox-lg.svg";
 import Head from '@docusaurus/Head';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Swiper, SwiperSlide,useSwiperSlide } from "swiper/react";
+import "swiper/css/bundle";
 import "swiper/css/effect-flip";
-import { Mousewheel, EffectFlip } from "swiper";
+import {Mousewheel, EffectCreative} from "swiper";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -38,20 +38,31 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
+  const [isScrollableSlide,setIsScrollableSlide] = useState<boolean>();
+  const swiperSlide = useSwiperSlide();
   return (
-    <Layout
-      title={`${siteConfig.title} DeCentral`}
-      description="decentralized music streaming with NFTs">
-      <Head>
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4373d697-5c9f-425e-a75a-b8c758154b53">
-        </script>
-      </Head>
-      <Swiper
-        direction={"vertical"}
-        slidesPerView={1}
-        effect={"fade"}
-        mousewheel={true}
-        modules={[EffectFlip, Mousewheel]}
+          <Layout
+              title={`${siteConfig.title} DeCentral`}
+              description="decentralized music streaming with NFTs">
+              <Head>
+                  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4373d697-5c9f-425e-a75a-b8c758154b53">
+                  </script>
+              </Head>
+              <Swiper
+                  effect={"creative"}
+                  direction={"vertical"}
+                  creativeEffect={{
+                      prev: {
+                          shadow: true,
+                          translate: [0, 0, -400]
+                      },
+                      next: {
+                          translate: ["100%", 0, 0]
+                      }
+              }}
+                  
+          mousewheel={true}
+          modules={[EffectCreative, Mousewheel]}
         className="mySwiper"
       >
         <SwiperSlide>
