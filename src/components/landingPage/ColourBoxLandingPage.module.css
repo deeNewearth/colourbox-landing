@@ -25,6 +25,24 @@
     border-color: #3BE8B0;
 }
 
+.roundFillIcon {
+    background-color: #1BAFD0;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.imgCard {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.centerImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .button {
     background-color: #101010;
     color: white;
@@ -89,6 +107,13 @@
     .container_landing_page {
         max-width: 700px;
     }
+
+    .Flex {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
+    }
+
 }
 
 @media screen and (max-width: 540px) {

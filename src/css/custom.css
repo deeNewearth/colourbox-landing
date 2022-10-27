@@ -14,6 +14,9 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  --swiper-pagination-color: #1BAFD0;
+  --swiper-pagination-bullet-inactive-color: #1BAFD0;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
 }
 
 .button {
@@ -44,6 +47,11 @@
 
 .success-btn:hover {
   background-color: var(--ifm-color-primary);
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+  color: #1BAFD0;
 }
 
 .swiper {
