@@ -44,7 +44,7 @@ const config = {
     ({
       colorMode: {
         defaultMode: 'dark',
-        //disableSwitch: true
+        disableSwitch: true
       },
       navbar: {
         logo: {
@@ -57,14 +57,52 @@ const config = {
             to: "/",
             label: "Explore as a fan",
             className: "button",
-            position:"right"
+            position: "right"
           },
           {
             to: "/",
             label: "Sign up as a creator",
             className: "button success-btn",
+            position: "right"
+          },
+          {
+            to: "/",
+            label:"Home"
+          },
+          {
+            to: "/",
+            label: "FAQs"
+          },
+          {
+            to: "/",
+            label: "Resources"
+          },
+          {
+            to: "/",
+            label: "I have questions"
+          },
+          {
+            to: "/",
+            label: "Contact us"
+          },
+          {
+            to: "/",
+            "aria-label": "Instagram Profile",
+            className:"instagram",
             position:"right"
           },
+          {
+            to: "/",
+            "aria-label": "Twitter Profile",
+            className:"twitter",
+            position:"right"
+          },
+          {
+            to: "/",
+            "aria-label": "Discord Server",
+            className: "discord",
+            position:"right"
+          }
           // {
           //   to: 'https://rinkeby.staging.colourbox.io/',
           //   label: 'GET STARTED',
@@ -123,6 +161,11 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} New Earth Art & Tech LLC.`,
       },
+      plugins: [
+        {
+          sidebarCollapsibile:false
+        }
+      ],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

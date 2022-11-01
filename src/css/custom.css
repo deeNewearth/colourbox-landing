@@ -11,6 +11,7 @@
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
   --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-navbar-background-color: #101010;
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
@@ -19,11 +20,82 @@
   --swiper-pagination-bullet-inactive-opacity: 0.2;
 }
 
-.button {
+.navbar__toggle {
+  position: absolute;
+  right: 0
+}
 
+.navbar__items {
+  gap: 0.3rem;
+}
+
+.navbar-sidebar__items {
+  text-align: center;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: transparent;
+}
+
+.instagram {
+  background: url("../assets/instagram.svg") no-repeat;
+  content: "";
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.instagram:before {
+  background: url("../assets/instagram.svg") no-repeat;
+  content: "";
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.twitter {
+  background: url("../assets/twitter.svg") no-repeat;
+  margin: 0 0.1rem;
+  content: "";
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.twitter:before {
+  background: url("../assets/twitter.svg") no-repeat;
+  content: "";
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.discord {
+  background: url("../assets/discord.svg") no-repeat;
+  content: "";
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.discord:before {
+  background: url("../assets/discord.svg") no-repeat;
+  content: "";
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.menu__link {
   color: white;
-  padding: 5px 30px;
-  text-decoration: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.menu__list-item {
+  text-align: center;
+}
+
+.button {
+  color: white;
+  padding: 5px 40px;
+  clear: left;
+  min-width: fit-content;
+  max-width: 15rem;
   font-weight: bold;
   border-radius: 25px;
   border: 2px;
@@ -129,6 +201,8 @@ html[data-theme='dark'] {
     width: 80%;
     height: 70%;
   }
+
+
 }
 
 
