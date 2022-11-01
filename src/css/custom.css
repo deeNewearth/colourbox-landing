@@ -29,8 +29,17 @@
   gap: 0.3rem;
 }
 
-.navbar-sidebar__items {
-  text-align: center;
+.navbar-sidebar__item {
+  position: relative;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .menu__link--active:not(.menu__link--sublist) {
@@ -94,8 +103,8 @@
   color: white;
   padding: 5px 40px;
   clear: left;
+  max-width: 12rem;
   min-width: fit-content;
-  max-width: 15rem;
   font-weight: bold;
   border-radius: 25px;
   border: 2px;
@@ -193,6 +202,30 @@ html[data-theme='dark'] {
     width: 80%;
     height: 65%;
     margin-top: 100px;
+  }
+
+  .instagram {
+    margin-left: 20px;
+    margin-top: 0.4rem;
+    bottom: 12vh;
+    position: absolute;
+  }
+
+  .twitter {
+    margin-left: -25px;
+    margin-top: 0.2rem;
+    bottom: 12vh;
+    position: absolute;
+  }
+
+  .discord {
+    margin-left: -70px;
+    bottom: 12vh;
+    position: absolute;
+  }
+
+  .button {
+    min-width: 13rem;
   }
 }
 
