@@ -53,6 +53,22 @@ const config = {
         },
 
         items: [
+          
+          {
+            to: "/",
+              label: "Home",
+            position:"right"
+          },
+          {
+            to: "/",
+              label: "FAQs",
+            position:"right"
+          },
+          {
+            to: "/",
+              label: "Solutions",
+            position:"right"
+            },
           {
             to: "/",
             label: "Explore as a fan",
@@ -61,48 +77,10 @@ const config = {
           },
           {
             to: "/",
-            label: "Sign up as a creator",
-            className: "button success-btn",
+            label: "Get started",
+            className: "success-btn",
             position: "right"
-          },
-          {
-            to: "/",
-            label:"Home"
-          },
-          {
-            to: "/",
-            label: "FAQs"
-          },
-          {
-            to: "/",
-            label: "Resources"
-          },
-          {
-            to: "/",
-            label: "I have questions"
-          },
-          {
-            to: "/",
-            label: "Contact us"
-          },
-          {
-            to: "/",
-            "aria-label": "Instagram Profile",
-            className:"instagram",
-            position:"right"
-          },
-          {
-            to: "/",
-            "aria-label": "Twitter Profile",
-            className:"twitter",
-            position:"right"
-          },
-          {
-            to: "/",
-            "aria-label": "Discord Server",
-            className: "discord",
-            position:"right"
-          }
+            }
           // {
           //   to: 'https://rinkeby.staging.colourbox.io/',
           //   label: 'GET STARTED',

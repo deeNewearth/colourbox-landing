@@ -1,148 +1,49 @@
 import Link from '@docusaurus/Link';
 import clsx from 'clsx';
 import React, { useState } from 'react';
-import useMediaQuery from "../../utils/useMediaQuery";
-import { Swiper, SwiperSlide } from "swiper/react";
-import PlayIcon from "../../assets/play.svg";
-import { EffectFlip, Pagination, Navigation } from "swiper";
+import PlayIcon from "../../assets/play.svg"
 import styles from './ColourBoxLandingPage.module.css';
-const offeredServices = [
+
+const features = [
     {
-        title: "Song request access",
-        desc: "Make it easy for fans to buy the exclusive access to request songs from you",
-        img: "/img/people.png",
-        link: "/",
-        avalaible: false,
-        variant: styles.alertBtn
+        imgUrl: "/img/icons/folder.png",
+        title: "Create a project",
+        description: "Sell fans exclusive access to services, content, merchandise, events, and community."
     },
     {
-        title: "Guest list access",
-        desc: "Make it easy for fans to buy the exclusive access to be on your guest list.",
-        img: "/img/people.png",
-        link: "/",
-        avalaible: true,
-        variant: styles.warningBtn
+        imgUrl: "/img/icons/qrcode.png",
+        title: "Generate a link/QR code",
+        description: "Fans can easily scan your QR code or click a link (in your social media bio) to purchase your project. No app download required."
+    },
+    {
+        imgUrl: "/img/icons/coins-send.png",
+        title: "Receive your payment",
+        description: "Have the money you earned in your account the same day."
     }
 ]
 export default function ColourBoxLandingPage(): JSX.Element {
-    const [kind, selectKind] = useState<string>();
-    const showMobSlide = useMediaQuery('(max-width: 768px)')
-    const renderServices = () => {
-        return offeredServices.map(offService => (
-            <div className={clsx(styles.Flex, styles.container)}>
-                <div style={{ position: "relative", width: "100%" }}>
-                    <img src={offService.img} alt=""
-                        className={styles.imgCard}
-                        style={{ maxWidth: "400px", opacity: offService.avalaible ? "100%" : "50%" }}
-                    />
-                    {!offService.avalaible ? (
-                        <h3 className={styles.centerImg}>
-                            FEATURE COMING SOON
-                        </h3>
-                    ) : (
-                        <div className={styles.centerImg}>
-                            <PlayIcon className={styles.roundFillIcon} />
-                        </div>
-                    )}
-                </div>
-
-                <div className="text--center" style={{ marginTop: '3rem' }}>
-                    <h1><u>{offService.title}</u></h1>
-                    <p>{offService.desc}</p>
-                    <Link to="/" className={clsx(styles.button, offService.variant)}>Learn more</Link>
-                </div>
-            </div>
-        ))
-    }
     return (
-        <>
-            <div className={styles.container_landing_page}>
-                <div className="text--center">
-                    <div style={{ margin: "2rem 0px" }}>
-                        <h2>What kind of creator are you?</h2>
-                        <div className={styles.Flex}>
-                            <h3>I am a</h3>
-                            <select className={styles.select} onChange={(e) => selectKind(e.target.value)}>
-                                <option></option>
-                                <option value="dj">DJ</option>
-                            </select>
-                        </div>
+
+        <div className={styles.container_landing_page}>
+
+            <div className="text--center">
+                <div style={{ margin: "2rem 0px" }}>
+                    <h1>Tools for the creator economy.</h1>
+                    <h4>We build solutions that help improve the lives of creators.</h4>
+                    <div className={styles.videoContainer}>
+                        <PlayIcon className={clsx(styles.playIcon, styles.centerImg)} />
                     </div>
 
-                </div>
-                {kind === "dj" && (
-                    <>
-                        <div className="text--center">
-                            <h1>
-                                Services we offer
-                            </h1>
+                    <h1 style={{ margin: "3rem 0px" }}>How it works</h1>
+                    {features.map((feat, i) => (
+                        <div className={styles.card} key={i}>
+                            <img src={feat.imgUrl} />
+                            <h3>{feat.title}</h3>
+                            <p>{feat.description}</p>
                         </div>
-                        {showMobSlide ? (
-                            <Swiper
-                                effect={"flip"}
-                                grabCursor={true}
-                                pagination={true}
-                                navigation={true}
-                                modules={[EffectFlip, Pagination, Navigation]}
-                                className="mySwiper"
-                            >
-                                {offeredServices.map(offService => (
-                                    <SwiperSlide>
-                                        <div className={clsx(styles.Flex, styles.container)}>
-                                            <div style={{ position: "relative", width: "100%" }}>
-                                                <img src={offService.img} alt=""
-                                                    className={styles.imgCard}
-                                                    style={{ maxWidth: "400px", opacity: offService.avalaible ? "100%" : "50%" }}
-                                                />
-                                                {!offService.avalaible ? (
-                                                    <h3 className={styles.centerImg}>
-                                                        FEATURE COMING SOON
-                                                    </h3>
-                                                ) : (
-                                                    <div className={styles.centerImg}>
-                                                        <PlayIcon className={styles.roundFillIcon} />
-                                                    </div>
-                                                )}
-                                            </div>
-
-                                            <div className="text--center" style={{ marginTop: '3rem' }}>
-                                                <h1><u>{offService.title}</u></h1>
-                                                <p>{offService.desc}</p>
-                                                <Link to="/" className={clsx(styles.button, offService.variant)}>Learn more</Link>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>))}
-                            </Swiper>
-                        )
-                            : offeredServices.map(offService => (
-                                <div className={clsx(styles.Flex, styles.container)}>
-                                    <div style={{ position: "relative", width: "100%" }}>
-                                        <img src={offService.img} alt=""
-                                            className={styles.imgCard}
-                                            style={{ maxWidth: "400px", opacity: offService.avalaible ? "100%" : "50%" }}
-                                        />
-                                        {!offService.avalaible ? (
-                                            <h3 className={styles.centerImg}>
-                                                FEATURE COMING SOON
-                                            </h3>
-                                        ) : (
-                                            <div className={styles.centerImg}>
-                                                <PlayIcon className={styles.roundFillIcon} />
-                                            </div>
-                                        )}
-                                    </div>
-
-                                    <div className="text--center" style={{ marginTop: '3rem' }}>
-                                        <h1><u>{offService.title}</u></h1>
-                                        <p>{offService.desc}</p>
-                                        <Link to="/" className={clsx(styles.button, offService.variant)}>Learn more</Link>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </>
-                )
-                }
+                    ))}
+                </div>
             </div>
-        </>)
+        </div>
+    )
 }

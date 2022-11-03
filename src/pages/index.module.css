@@ -3,156 +3,169 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-color: #101010;
-  min-height: 98vh;
-  --ifm-hero-text-color: #ffffff;
-  flex: 1;
-  align-items: center;
-}
 
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.centerImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .buttons>a {
-  margin: 0.2rem;
+    margin: 0.2rem;
 
 }
 
-.bubble {
-  border-radius: 100%;
-  position: absolute;
-  opacity: 0.6;
-  z-index: 1;
-  min-height: 30rem;
-  min-width: 30rem;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752,
-      #e73c7e);
-  background-size: 400% 400%;
-  -webkit-animation: circleAround 12s linear infinite, gradient 8s ease infinite;
-  animation: circleAround 12s linear infinite,
-    gradient 8s ease infinite;
+.button {
+    color: white;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 4px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: white;
 }
 
-.bubbleSmall {
-  border-radius: 100%;
-  position: absolute;
-  opacity: 0.6;
-  z-index: 1;
-  min-height: 10rem;
-  min-width: 10rem;
-  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752,
-      #e73c7e, #23a6d5,
-      #23d5ab, );
-  background-size: 400% 400%;
-  -webkit-animation: circleAround 7s linear infinite, gradient 8s ease infinite;
-  animation: circleAround 7s linear infinite,
-    gradient 8s ease infinite;
+.button:hover {
+    background-color: white;
+    transition: 0.7s;
+    text-decoration: none;
+    color: black;
 }
 
-.bubbleReverse {
-  border-radius: 100%;
-  position: absolute;
-  opacity: 0.6;
-  z-index: 1;
-  min-height: 30rem;
-  min-width: 30rem;
-  background: linear-gradient(-45deg, #e73c7e, #ee7752, #fff, #23d5ab, #23a6d5, #23d5ab,
-      #ee7752);
-  background-size: 400% 400%;
-  -webkit-animation: reverseCircleAround 23s linear infinite, gradient 8s ease infinite;
-  animation: reverseCircleAround 23s linear infinite,
-    gradient 8s ease infinite;
+.box {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    transform: rotate(80deg);
+    left: 0;
 }
 
-.bubbleSmallReverse {
-  border-radius: 100%;
-  position: absolute;
-  opacity: 0.6;
-  z-index: 1;
-  min-height: 21rem;
-  min-width: 21rem;
-  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752,
-      #e73c7e);
-  background-size: 400% 400%;
-  -webkit-animation: reverseCircleAround 4s linear infinite, gradient 8s ease infinite;
-  animation: reverseCircleAround 4s linear infinite,
-    gradient 8s ease infinite;
+.wave {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    background: linear-gradient(160.88deg, #B8FBFF 19.61%, #3BE8B0 41.79%, #FFB900 78.15%);
+    width: 1500px;
+    height: 1300px;
+    margin-left: -150px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 7000ms infinite linear;
 }
 
-.gradient {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
+.waveThree {
+    z-index: -1;
+    animation: drift 7500ms infinite linear;
+    border-radius: 43%;
+    position: fixed;
+    background: linear-gradient(160.88deg, #B8FBFF 19.61%, #3BE8B0 41.79%, #FFB900 78.15%);
+    ;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+.waveFour {
+    z-index: -1;
+    animation: drift 6500ms infinite linear;
+    border-radius: 43%;
+    left: 15%;
+    position: fixed;
+    background: linear-gradient(118.99deg, #FD636B 10.86%, #FD636B 77.62%);
+    ;
 }
 
-@keyframes reverseCircleAround {
-  from {
-    transform: rotate(0deg) translateX(-12vw) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translateX(-12vw) rotate(-360deg);
-  }
+.waveTwo {
+    z-index: -1;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    opacity: .1;
+    background: #1BAFD0;
+    position: fixed;
 }
 
-@-webkit-keyframes reverseCircleAround {
-  from {
-    transform: rotate(0deg) translateX(-120vw) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translateX(-12vw) rotate(-360deg);
-  }
-
+.box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
 }
 
-@-webkit-keyframes circleAround {
-  from {
-    -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg);
-  }
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
 
-  to {
-    -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg);
-  }
-
+    from {
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes circleAround {
-  from {
-    transform: rotate(0deg) translateX(200px) rotate(0deg);
-  }
+@-webkit-keyframes anim {
+    0% {
+        -webkit-transform: scale(0, 0) rotateZ(-90deg);
+        transform: scale(0, 0) rotateZ(-90deg);
+        opacity: 0
+    }
 
-  to {
-    transform: rotate(360deg) translateX(200px) rotate(-360deg);
-  }
+    30% {
+        -webkit-transform: scale(1, 1) rotateZ(0deg);
+        transform: scale(1, 1) rotateZ(0deg);
+        opacity: 1
+    }
+
+    50% {
+        -webkit-transform: scale(1, 1) rotateZ(0deg);
+        transform: scale(1, 1) rotateZ(0deg);
+        opacity: 1
+    }
+
+    80% {
+        -webkit-transform: scale(0, 0) rotateZ(90deg);
+        transform: scale(0, 0) rotateZ(90deg);
+        opacity: 0
+    }
+}
+
+@keyframes anim {
+    0% {
+        -webkit-transform: scale(0, 0) rotateZ(-90deg);
+        transform: scale(0, 0) rotateZ(-90deg);
+        opacity: 0
+    }
+
+    30% {
+        -webkit-transform: scale(1, 1) rotateZ(0deg);
+        transform: scale(1, 1) rotateZ(0deg);
+        opacity: 1
+    }
+
+    50% {
+        -webkit-transform: scale(1, 1) rotateZ(0deg);
+        transform: scale(1, 1) rotateZ(0deg);
+        opacity: 1
+    }
+
+    80% {
+        -webkit-transform: scale(0, 0) rotateZ(90deg);
+        transform: scale(0, 0) rotateZ(90deg);
+        opacity: 0
+    }
 }

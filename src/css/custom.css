@@ -15,8 +15,8 @@
     --ifm-color-primary-lighter: rgb(102, 212, 189);
     --ifm-color-primary-lightest: rgb(146, 224, 208);
     --ifm-code-font-size: 95%;
-    --swiper-pagination-color: #1BAFD0;
-    --swiper-pagination-bullet-inactive-color: #1BAFD0;
+    --swiper-pagination-color: rgba(255, 255, 255);
+    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.5);
     --swiper-pagination-bullet-inactive-opacity: 0.2;
 }
 
@@ -25,8 +25,8 @@
     right: 0
 }
 
-.navbar__link {
-    font-size: small;
+.navbar__item {
+    color: white;
 }
 
 .navbar__items {
@@ -50,48 +50,6 @@
     background: transparent;
 }
 
-.instagram {
-    background: url("../assets/instagram.svg") no-repeat;
-    content: "";
-    min-height: 24px;
-    min-width: 24px;
-}
-
-.instagram:before {
-    background: url("../assets/instagram.svg") no-repeat;
-    content: "";
-    min-height: 24px;
-    min-width: 24px;
-}
-
-.twitter {
-    background: url("../assets/twitter.svg") no-repeat;
-    margin: 0 0.1rem;
-    content: "";
-    min-height: 24px;
-    min-width: 24px;
-}
-
-.twitter:before {
-    background: url("../assets/twitter.svg") no-repeat;
-    content: "";
-    min-height: 24px;
-    min-width: 24px;
-}
-
-.discord {
-    background: url("../assets/discord.svg") no-repeat;
-    content: "";
-    min-height: 24px;
-    min-width: 24px;
-}
-
-.discord:before {
-    background: url("../assets/discord.svg") no-repeat;
-    content: "";
-    min-height: 24px;
-    min-width: 24px;
-}
 
 .menu__link {
     color: white;
@@ -105,12 +63,12 @@
 
 .button {
     color: white;
-    padding: 5px 40px;
+    padding: 5px 10px;
     clear: left;
     max-width: 12rem;
     min-width: fit-content;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 12px;
     border: 2px;
     margin: 0rem 0.25rem;
     font-weight: normal;
@@ -127,16 +85,31 @@
 }
 
 .success-btn {
+    color: black;
+    padding: 3px 10px;
+    clear: left;
+    min-width: 6.5rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 2px;
+    margin: 0rem 0.25rem;
+    font-weight: normal;
+    cursor: pointer;
+    border-style: solid;
     border-color: var(--ifm-color-primary);
+    background-color: var(--ifm-color-primary);
 }
 
 .success-btn:hover {
-    background-color: var(--ifm-color-primary);
+    filter: brightness(1.2);
+    color: black;
+    transition: 0.7s;
+    text-decoration: none;
 }
 
 div.swiper-button-prev,
 div.swiper-button-next {
-    color: #1BAFD0;
+    color: white;
 }
 
 .swiper {
@@ -159,6 +132,7 @@ div.swiper-button-next {
 .swiper-slide img {
     display: block;
     width: 100%;
+    min-height: 350px;
     height: 100%;
     object-fit: cover;
 }
@@ -208,28 +182,10 @@ html[data-theme='dark'] {
         margin-top: 100px;
     }
 
-    .instagram {
-        margin-left: 20px;
-        margin-top: 0.4rem;
-        bottom: 12vh;
-        position: absolute;
-    }
-
-    .twitter {
-        margin-left: -25px;
-        margin-top: 0.2rem;
-        bottom: 12vh;
-        position: absolute;
-    }
-
-    .discord {
-        margin-left: -70px;
-        bottom: 12vh;
-        position: absolute;
-    }
-
-    .button {
-        min-width: 13rem;
+    .success-btn,
+    .success-btn:hover {
+        color: white;
+        background-color: var(--ifm-color-primary);
     }
 }
 
