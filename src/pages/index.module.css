@@ -46,7 +46,7 @@
     position: fixed;
     z-index: -1;
     top: 0;
-    transform: rotate(80deg);
+    transform: rotate(-40deg);
     left: 0;
 }
 
