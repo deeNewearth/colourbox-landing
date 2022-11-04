@@ -5,6 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
+
 :root {
     --ifm-color-primary: #25c2a0;
     --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -26,6 +27,14 @@
 }
 
 .navbar__item {
+    color: white;
+}
+
+.navbar__link {
+    color: rgba(255, 255, 255, 0.689)
+}
+
+.navbar__link--active {
     color: white;
 }
 
@@ -57,8 +66,17 @@
     text-align: center;
 }
 
+.menu__link:hover {
+    background-color: transparent;
+    color: #25c2a0;
+}
+
 .menu__list-item {
     text-align: center;
+}
+
+.footer {
+    background-color: #000000d0;
 }
 
 .button {
@@ -157,6 +175,15 @@ html[data-theme='dark'] {
     margin-right: 10px;
 }
 
+.dropdown__menu {
+    background-color: #171717;
+}
+
+.dropdown__link {
+    color: white;
+    background-color: #2a2a2a;
+}
+
 .button-rounded {
     border-radius: 20px;
     padding-left: 30px;
@@ -173,6 +200,59 @@ html[data-theme='dark'] {
     height: 80%;
     margin: 50px auto;
     border: none;
+}
+
+.centerImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.videoContainer {
+    background: #D9D9D9;
+    max-height: 547px;
+    min-height: 300px;
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.playIcon {
+    background-color: #EE0009;
+    border-radius: 20px;
+    min-width: 90px;
+    padding: 1rem;
+}
+
+
+.startButton {
+    color: black;
+    margin: 1rem;
+    padding: 8px 40px;
+    text-align: center;
+    min-width: 6.5rem;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 0rem 0.25rem;
+    font-size: x-large;
+    font-weight: normal;
+    cursor: pointer;
+    background-color: var(--ifm-color-primary);
+}
+
+.startButton:hover {
+    filter: brightness(1.2);
+    color: black;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+.moreInfo {
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: large;
+    color: white;
+    line-height: 61px;
 }
 
 @media screen and (max-width: 1024px) {

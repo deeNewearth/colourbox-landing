@@ -6,98 +6,135 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ColourBox',
-  tagline: 'all in one monetization tool for creators.',
-  url: 'https://colourbox.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'colourbox', // Usually your GitHub org/user name.
-  projectName: 'colourbox', // Usually your repo name.
+    title: 'ColourBox',
+    tagline: 'all in one monetization tool for creators.',
+    url: 'https://colourbox.io',
+    baseUrl: '/',
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'warn',
+    favicon: 'img/favicon.ico',
+    organizationName: 'colourbox', // Usually your GitHub org/user name.
+    projectName: 'colourbox', // Usually your repo name.
 
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://code.krystalhouse.labizbille.com/newEarth/ne-tokenized/colourbox-nft/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://code.krystalhouse.labizbille.com/newEarth/ne-tokenized/colourbox-nft/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
-    ],
-  ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: true
-      },
-      navbar: {
-        logo: {
-          alt: 'ColourBox Logo',
-          src: 'img/colourbox_logo_label.png',
-        },
-
-        items: [
-          
-          {
-            to: "/",
-              label: "Home",
-            position:"right"
-          },
-          {
-            to: "/",
-              label: "FAQs",
-            position:"right"
-          },
-          {
-            to: "/",
-              label: "Solutions",
-            position:"right"
-            },
-          {
-            to: "/",
-            label: "Explore as a fan",
-            className: "button",
-            position: "right"
-          },
-          {
-            to: "/",
-            label: "Get started",
-            className: "success-btn",
-            position: "right"
-            }
-          // {
-          //   to: 'https://rinkeby.staging.colourbox.io/',
-          //   label: 'GET STARTED',
-          //   position: 'right',
-          //   className: 'button button--default button--md button-mr button-rounded'
-          // },
-          /*{
-            href: 'https://app.colourbox.io',
-            label: 'Start streaming',
-            position: 'right',
-          },*/
+    presets: [
+        [
+            'classic',
+            /** @type {import('@docusaurus/preset-classic').Options} */
+            ({
+                docs: {
+                    sidebarPath: require.resolve('./sidebars.js'),
+                    // Please change this to your repo.
+                    editUrl: 'https://code.krystalhouse.labizbille.com/newEarth/ne-tokenized/colourbox-nft/',
+                },
+                blog: {
+                    showReadingTime: true,
+                    // Please change this to your repo.
+                    editUrl:
+                        'https://code.krystalhouse.labizbille.com/newEarth/ne-tokenized/colourbox-nft/',
+                },
+                theme: {
+                    customCss: require.resolve('./src/css/custom.css'),
+                },
+            }),
         ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          /*{
+    ],
+
+    themeConfig:
+        /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+        ({
+            colorMode: {
+                defaultMode: 'dark',
+                disableSwitch: true
+            },
+            navbar: {
+                logo: {
+                    alt: 'ColourBox Logo',
+                    src: 'img/colourbox_logo_label.png',
+                },
+
+                items: [
+          
+                    {
+                        to: "/",
+                        label: "Home",
+                        position: "right"
+                    },
+                    {
+                        to: "/faq",
+                        label: "FAQs",
+                        position: "right"
+                    },
+                    {
+                        label: "Solutions",
+                        position: "right",
+                        items: [
+                            {
+                                label: "Song requests",
+                                to:"/features/songrequests"
+                            },
+                            {
+                                label: "Guest list access",
+                                to:"/features/guestlists"
+                            }
+                        ]
+                    },
+                    {
+                        to: "/",
+                        label: "Explore as a fan",
+                        className: "button",
+                        position: "right"
+                    },
+                    {
+                        to: "/",
+                        label: "Get started",
+                        className: "success-btn",
+                        position: "right"
+                    }
+                    // {
+                    //   to: 'https://rinkeby.staging.colourbox.io/',
+                    //   label: 'GET STARTED',
+                    //   position: 'right',
+                    //   className: 'button button--default button--md button-mr button-rounded'
+                    // },
+                    /*{
+                      href: 'https://app.colourbox.io',
+                      label: 'Start streaming',
+                      position: 'right',
+                    },*/
+                ],
+            },
+            footer: {
+                style: 'dark',
+                links: [
+              {
+                label: 'Discord',
+                href: '/',
+                    },
+                    {
+                        label: "Instagram",
+                        href:"/"
+              },
+              {
+                  label: 'Twitter',
+                href: '/',
+              },
+            
+              /* {
+                title: "Community",
+                items: [
+                      {
+                "aria-label": "Discord Server",
+                className: 'discord',
+                to: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                "aria-label": "Twitter Profile",
+                className: 'twitter',
+                to: 'https://twitter.com/docusaurus',
+              }
+            ]
+              } */
+            /*{
             title: 'Docs',
             items: [
               {

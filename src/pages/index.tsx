@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -51,7 +51,6 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
     const { siteConfig } = useDocusaurusContext();
-    const [isScrollableSlide, setIsScrollableSlide] = useState<boolean>();
     const swiperSlide = useSwiperSlide();
     return (
         <Layout
