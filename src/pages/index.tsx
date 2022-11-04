@@ -31,7 +31,7 @@ function HomepageHeader() {
                             Song request access
                         </h1>
                         <p>Allow fans to easily buy song request access.</p>
-                        <Link to="/" className={styles.button}>Learn more</Link>
+                        <Link to="/features/songrequests" className={styles.button}>Learn more</Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide style={{ zIndex: 3 }}>
@@ -41,7 +41,7 @@ function HomepageHeader() {
                             Guest list access
                         </h1>
                         <p>Allow fans to buy/subscribe to get access to your guest list</p>
-                        <Link to="/" className={styles.button}>Learn more</Link>
+                        <Link to="/features/guestlists" className={styles.button}>Learn more</Link>
                     </div>
                 </SwiperSlide>
             </Swiper>
