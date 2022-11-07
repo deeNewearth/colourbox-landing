@@ -60,7 +60,7 @@ const config = {
                         position: "right"
                     },
                     {
-                        to: "/faq",
+                        to: "/",
                         label: "FAQs",
                         position: "right"
                     },
