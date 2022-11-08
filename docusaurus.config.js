@@ -80,7 +80,7 @@ const config = {
                     },
                     {
                         to: "/",
-                        label: "Explore as a fan",
+                        label: "Login",
                         className: "button",
                         position: "right"
                     },
