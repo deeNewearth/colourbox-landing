@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import ColourBoxLandingPage from '../components/landingPage/ColourBoxLandingPage';
@@ -30,7 +29,9 @@ function HomepageHeader() {
                             Song request access
                         </h1>
                         <p>Allow fans to easily buy song request access.</p>
-                        <Link to="/features/songrequests" className={styles.button}>Learn more</Link>
+                        <a href="/features/songrequests" className={styles.button}>
+                            Learn more
+                        </a>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide style={{ zIndex: 3 }}>
@@ -40,7 +41,9 @@ function HomepageHeader() {
                             Guest list access
                         </h1>
                         <p>Allow fans to buy/subscribe to get access to your guest list</p>
-                        <Link to="/features/guestlists" className={styles.button}>Learn more</Link>
+                        <a href="/features/guestlists" className={styles.button}>
+                            Learn more
+                        </a>
                     </div>
                 </SwiperSlide>
             </Swiper>
