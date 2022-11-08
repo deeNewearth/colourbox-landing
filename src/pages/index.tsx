@@ -18,7 +18,6 @@ function HomepageHeader() {
         <header style={{ background: "#101010" }}>
             <Swiper
                 effect={"flip"}
-                grabCursor={true}
                 pagination={true}
                 navigation={true}
                 modules={[EffectFlip, Pagination, Navigation]}
