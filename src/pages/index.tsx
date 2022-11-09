@@ -19,6 +19,7 @@ function HomepageHeader() {
                 effect={"flip"}
                 pagination={true}
                 navigation={true}
+                grabCursor={false}
                 modules={[EffectFlip, Pagination, Navigation]}
                 className="mySwiper"
             >
