@@ -30,9 +30,11 @@ function HomepageHeader() {
                             Song request access
                         </h1>
                         <p>Allow fans to easily buy song request access.</p>
-                        <a href="/features/songrequests" className={styles.button}>
-                            Learn more
-                        </a>
+                        <div>
+                            <a href="/features/songrequests" className={styles.button}>
+                                Learn more
+                            </a>
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide style={{ zIndex: 3 }}>
@@ -42,9 +44,11 @@ function HomepageHeader() {
                             Guest list access
                         </h1>
                         <p>Allow fans to buy/subscribe to get access to your guest list</p>
-                        <a href="/features/guestlists" className={styles.button}>
-                            Learn more
-                        </a>
+                        <div>
+                            <a href="/features/guestlists" className={styles.button}>
+                                Learn more
+                            </a>
+                        </div>
                     </div>
                 </SwiperSlide>
             </Swiper>

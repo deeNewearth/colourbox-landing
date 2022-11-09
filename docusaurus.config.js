@@ -60,11 +60,6 @@ const config = {
                         position: "right"
                     },
                     {
-                        to: "/",
-                        label: "FAQs",
-                        position: "right"
-                    },
-                    {
                         label: "Solutions",
                         position: "right",
                         items: [
@@ -77,6 +72,11 @@ const config = {
                                 to:"/features/guestlists"
                             }
                         ]
+                    },
+                    {
+                        to: "/",
+                        label: "FAQs",
+                        position: "right"
                     },
                     {
                         to: "/",
