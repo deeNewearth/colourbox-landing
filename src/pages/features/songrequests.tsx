@@ -1,9 +1,10 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import React from 'react'
+import React, { useState } from 'react'
 import PlayIcon from "../../assets/play.svg"
 import { ProReason, WhyUs } from '@site/src/components/whyUs/whyUs';
 import Link from '@docusaurus/Link';
+import InfoModal from '@site/src/components/infoModal/infoModal';
 
 const proReasons: ProReason[] = [
     {
@@ -29,6 +30,7 @@ const proReasons: ProReason[] = [
 ]
 const SongRequests = () => {
     const { siteConfig } = useDocusaurusContext();
+    const [showPricingModal, setShowPricingModal] = useState(false);
     return (
         <Layout
             title={`${siteConfig.title} DeCentral`}
@@ -42,11 +44,25 @@ const SongRequests = () => {
                 <div style={{ margin: "2rem 0px" }}>
                     <Link to="/" className="startButton">Get Started</Link>
                     <div>
-                        <Link to="/" className="moreInfo">View Pricing</Link>
+                        <p onClick={() => setShowPricingModal(true)} className="moreInfo">View Pricing</p>
                     </div>
                 </div>
                 <WhyUs reasons={proReasons} />
             </div>
+            {showPricingModal && <InfoModal title="Free to try!" onClose={() => setShowPricingModal(false)} content={
+                <>
+                    <h3>We win when you win.</h3>
+                    <ul>
+                        <li>
+                            We take 15% of your project sales and you keep the rest! No subscriptions or upfront fees needed to get started.
+                        </li>
+                        <li>
+                            If your project is resold, creators keep 10% of the project resale and we keep 5%. The reseller keeps 85%.
+                            (<Link to="/">Learn how resales work</Link>)
+                        </li>
+                    </ul>
+                </>
+            } />}
         </Layout>
     )
 }

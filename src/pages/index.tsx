@@ -10,6 +10,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/bundle";
 import { EffectFlip, Navigation, Pagination } from "swiper";
+import InfoModal from '../components/infoModal/infoModal';
 
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
