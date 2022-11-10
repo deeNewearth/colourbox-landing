@@ -39,9 +39,9 @@ export const Guestlists = () => {
             <div className="text--center" style={{ margin: "2rem auto ", maxWidth: "800px", textAlign: "center" }}>
                 <h1>Guest list access</h1>
                 <h4>Allow fans to easily buy access to your guest list.</h4>
-                <div className="videoContainer">
+                {/* <div className="videoContainer">
                     <PlayIcon className="playIcon centerImg" />
-                </div>
+                </div> */}
                 <div style={{ margin: "2rem 0px" }}>
                     <Link to="/" className="startButton">Get Started</Link>
                     <div>

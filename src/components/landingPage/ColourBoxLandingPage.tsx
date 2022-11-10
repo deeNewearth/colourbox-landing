@@ -30,9 +30,9 @@ export default function ColourBoxLandingPage(): JSX.Element {
                 <div style={{ margin: "2rem 0px" }}>
                     <h1>Tools for the creator economy.</h1>
                     <h4>We build solutions that help improve the lives of creators.</h4>
-                    <div className="videoContainer">
+                    {/* <div className="videoContainer">
                         <PlayIcon className="playIcon centerImg" />
-                    </div>
+                    </div> */}
 
                     <h1 style={{ margin: "3rem 0px" }}>How it works</h1>
                     {features.map((feat, i) => (

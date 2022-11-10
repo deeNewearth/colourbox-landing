@@ -16,10 +16,10 @@ export const WhyUs = ({ reasons }: { reasons: ProReason[] }) => {
                 <div style={{ margin: "3rem auto", maxWidth: "650px", }}>
                     <h2>{reason.title}</h2>
                     <p>{reason.description}</p>
-                    <Link className="button" style={{ display: "flex", margin: "auto", padding: "6px 2rem" }} to={reason.showcaseLink ?? "/"}>
+                    {/* <Link className="button" style={{ display: "flex", margin: "auto", padding: "6px 2rem" }} to={reason.showcaseLink ?? "/"}>
                         <PlayOutlined />
                         <span style={{ margin: "auto 0.4rem" }}>View Example</span>
-                    </Link>
+                    </Link> */}
                 </div>
             ))}
         </div>
