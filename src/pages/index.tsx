@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import ColourBoxLandingPage from '../components/landingPage/ColourBoxLandingPage';
 import Head from '@docusaurus/Head';
-import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/bundle";
