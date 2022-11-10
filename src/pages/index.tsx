@@ -23,7 +23,7 @@ function HomepageHeader() {
                 loop={true}
                 grabCursor={false}
                 autoplay={{
-                    delay: 2000,
+                    delay: 2500,
                     disableOnInteraction: false,
                 }}
                 modules={[EffectFlip, Pagination, Navigation, Autoplay]}
