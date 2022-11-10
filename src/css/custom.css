@@ -136,7 +136,8 @@ div.swiper-button-next {
 }
 
 .swiper-slide {
-    text-align: center;
+
+    display: inline-block;
     font-size: 18px;
     -webkit-justify-content: center;
     justify-content: center;

@@ -6,6 +6,7 @@
 
 .centerImg {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -22,9 +23,16 @@
     margin: 0.2rem;
 
 }
-
+.centerBtn {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .button {
     color: white;
+    display: block;
     padding: 5px 30px;
     text-decoration: none;
     font-weight: bold;

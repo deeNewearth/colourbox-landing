@@ -22,9 +22,10 @@ function HomepageHeader() {
                 pagination={true}
                 navigation={true}
                 loop={true}
+                loopAdditionalSlides={3}
                 grabCursor={false}
                 autoplay={{
-                    delay: 2500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 modules={[EffectFlip, Pagination, Navigation, Autoplay]}
@@ -32,30 +33,27 @@ function HomepageHeader() {
             >
                 <SwiperSlide >
                     <img style={{ zIndex: 3 }} src="/img/dj-playing.png" />
+                    <Link to="/features/songrequests" className={clsx(styles.centerBtn, styles.button)}>
+                        Learn more
+                    </Link>
                     <div className={styles.centerImg}>
                         <h1>
                             Song request access
                         </h1>
                         <p>Allow fans to easily buy song request access.</p>
-                        <p>
-                            <Link to="/features/songrequests" className={styles.button}>
-                                Learn more
-                            </Link>
-                        </p>
                     </div>
+
                 </SwiperSlide>
                 <SwiperSlide style={{ zIndex: 3 }}>
                     <img style={{ zIndex: 3 }} src="/img/people.png" />
+                    <Link to="/features/guestlists" className={clsx(styles.centerBtn, styles.button)}>
+                        Learn more
+                    </Link>
                     <div className={styles.centerImg}>
                         <h1>
                             Guest list access
                         </h1>
                         <p>Allow fans to buy/subscribe to get access to your guest list</p>
-                        <p>
-                            <Link to="/features/guestlists" className={styles.button}>
-                                Learn more
-                            </Link>
-                        </p>
                     </div>
                 </SwiperSlide>
             </Swiper>
