@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/bundle";
 import { Autoplay, EffectFlip, Navigation, Pagination } from "swiper";
 import InfoModal from '../components/infoModal/infoModal';
+import Link from '@docusaurus/Link';
 
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
@@ -36,11 +37,11 @@ function HomepageHeader() {
                             Song request access
                         </h1>
                         <p>Allow fans to easily buy song request access.</p>
-                        <div>
-                            <a href="/features/songrequests" className={styles.button}>
+                        <p>
+                            <Link to="/features/songrequests" className={styles.button}>
                                 Learn more
-                            </a>
-                        </div>
+                            </Link>
+                        </p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide style={{ zIndex: 3 }}>
@@ -50,11 +51,11 @@ function HomepageHeader() {
                             Guest list access
                         </h1>
                         <p>Allow fans to buy/subscribe to get access to your guest list</p>
-                        <div>
-                            <a href="/features/guestlists" className={styles.button}>
+                        <p>
+                            <Link to="/features/guestlists" className={styles.button}>
                                 Learn more
-                            </a>
-                        </div>
+                            </Link>
+                        </p>
                     </div>
                 </SwiperSlide>
             </Swiper>
