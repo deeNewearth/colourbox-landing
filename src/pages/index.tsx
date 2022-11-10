@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import ColourBoxLandingPage from '../components/landingPage/ColourBoxLandingPage';
 import Head from '@docusaurus/Head';
-import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from "swiper/react";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/bundle";
 import { Autoplay, EffectFlip, Navigation, Pagination } from "swiper";
-import InfoModal from '../components/infoModal/infoModal';
 import Link from '@docusaurus/Link';
 
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
     return (
         <header style={{ background: "#101010" }}>
             <Swiper
@@ -30,12 +30,13 @@ function HomepageHeader() {
                 }}
                 modules={[EffectFlip, Pagination, Navigation, Autoplay]}
                 className="mySwiper"
+                onRealIndexChange={(swiper) => {
+                    console.log(swiper.realIndex)
+                    setCurrentIndex(swiper.realIndex)
+                }}
             >
-                <SwiperSlide >
+                <SwiperSlide>
                     <img style={{ zIndex: 3 }} src="/img/dj-playing.png" />
-                    <Link to="/features/songrequests" className={clsx(styles.centerBtn, styles.button)}>
-                        Learn more
-                    </Link>
                     <div className={styles.centerImg}>
                         <h1>
                             Song request access
@@ -46,9 +47,6 @@ function HomepageHeader() {
                 </SwiperSlide>
                 <SwiperSlide style={{ zIndex: 3 }}>
                     <img style={{ zIndex: 3 }} src="/img/people.png" />
-                    <Link to="/features/guestlists" className={clsx(styles.centerBtn, styles.button)}>
-                        Learn more
-                    </Link>
                     <div className={styles.centerImg}>
                         <h1>
                             Guest list access
@@ -56,7 +54,11 @@ function HomepageHeader() {
                         <p>Allow fans to buy/subscribe to get access to your guest list</p>
                     </div>
                 </SwiperSlide>
+                <Link to={currentIndex % 2 === 0 ? "/features/songrequests" : "/features/guestlists"} style={{ zIndex: 4 }} className={clsx(styles.centerBtn, styles.button)}>
+                    Learn more
+                </Link>
             </Swiper>
+
         </header>
     );
 }
