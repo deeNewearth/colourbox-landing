@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/bundle";
-import { EffectFlip, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectFlip, Navigation, Pagination } from "swiper";
 import InfoModal from '../components/infoModal/infoModal';
 
 function HomepageHeader() {
@@ -20,8 +20,13 @@ function HomepageHeader() {
                 effect={"flip"}
                 pagination={true}
                 navigation={true}
+                loop={true}
                 grabCursor={false}
-                modules={[EffectFlip, Pagination, Navigation]}
+                autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                }}
+                modules={[EffectFlip, Pagination, Navigation, Autoplay]}
                 className="mySwiper"
             >
                 <SwiperSlide >
