@@ -26,7 +26,7 @@
 .centerBtn {
     position: absolute;
     text-align: center;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -176,4 +176,14 @@
         transform: scale(0, 0) rotateZ(90deg);
         opacity: 0
     }
+}
+
+@media screen and (max-width: 768px) {
+    .centerBtn {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 }
