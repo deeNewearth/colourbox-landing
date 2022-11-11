@@ -23,7 +23,7 @@ function HomepageHeader() {
                 navigation={true}
                 loop={true}
                 loopAdditionalSlides={3}
-                grabCursor={false}
+                grabCursor={true}
                 autoplay={{
                     delay: 5000,
                     disableOnInteraction: false,
