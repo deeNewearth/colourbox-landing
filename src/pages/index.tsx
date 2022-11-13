@@ -41,7 +41,7 @@ function HomepageHeader() {
                         <h1>
                             Song request access
                         </h1>
-                        <p>Allow fans to easily buy song request access.</p>
+                        <p>Allow fans to easily buy song requests from you.</p>
                     </div>
 
                 </SwiperSlide>
@@ -51,7 +51,7 @@ function HomepageHeader() {
                         <h1>
                             Guest list access
                         </h1>
-                        <p>Allow fans to buy/subscribe to get access to your guest list</p>
+                        <p>Allow fans to buy access to your guest list for events.</p>
                     </div>
                 </SwiperSlide>
                 <Link to={currentIndex % 2 === 0 ? "/features/songrequests" : "/features/guestlists"} style={{ zIndex: 4 }} className={clsx(styles.centerBtn, styles.button)}>

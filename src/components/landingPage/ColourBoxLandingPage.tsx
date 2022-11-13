@@ -18,7 +18,7 @@ const features = [
     {
         imgUrl: "/img/icons/coins-send.png",
         title: "Receive your payment",
-        description: "Have the money you earned in your account the same day."
+        description: "Have the money you earned in your account the same week."
     }
 ]
 export default function ColourBoxLandingPage(): JSX.Element {

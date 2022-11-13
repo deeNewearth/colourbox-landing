@@ -17,7 +17,7 @@ const proReasons: ProReason[] = [
     },
     {
         title: "Exclusivity",
-        description: "We understand that it’s unrealistic to allow everyone at an event request a song. That is why you can set a specific amount of song requests that can be sold at your preffered price point."
+        description: "We understand that it’s unrealistic to allow everyone at an event to request a song. That is why you can set a specific amount of song requests that can be sold at your preffered price point."
     },
     {
         title: "Resellability",

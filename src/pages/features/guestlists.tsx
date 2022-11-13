@@ -8,16 +8,16 @@ import PlayIcon from "../../assets/play.svg"
 
 const proReasons: ProReason[] = [
     {
-        title: "Subscription or one-time purchase",
-        description: "You can allow a limited amount of people to subscribe and pay a monthly fee to have access to your guest list. Or you can allow people to pay a one-time fee per event."
+        title: "Exclusivity",
+        description: "It’s impossible to allow everyone to get access to your guest list. That is why we allow you to set a specific amount that you want to sell at your preffered price point."
     },
     {
         title: "Easy setup & management",
-        description: "Signing up and setting up an event is just a few clicks. Once you setup the event you can customize what information you require from your guests, how many you want to allow, and even set a cut off time for purchases so fans don’t buy access to the guest list an hour before the event starts."
+        description: "Signing up and setting up an event is just a few clicks. Once you setup the event, quantity of guests, and price you can text the bouncers/check in people a virtual list of who is on your guest list. That way there is no extra steps needed on the clubs end to confirm your guests."
     },
     {
         title: "Easy confirmation",
-        description: "You can confirm attendees by scanning a QR code on their phone, setting a unique image that only they have access to that you will require them to show in order to enter, or put their names on a list."
+        description: "Confirmation for guests to get into an event is simple. After they purchase their access they will submit their full name, and when they arrive at the event they will tell the security their full name and they’re in. It’s that easy!"
     },
     {
         title: "Resellability",
@@ -25,7 +25,7 @@ const proReasons: ProReason[] = [
     },
     {
         title: "Easy cashout",
-        description: "Cashout the money you earned from guest list access the same day."
+        description: "Cashout the money you earned from selling guest list access the same week."
     }
 ]
 
