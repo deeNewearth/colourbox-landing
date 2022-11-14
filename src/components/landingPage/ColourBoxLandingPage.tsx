@@ -28,8 +28,8 @@ export default function ColourBoxLandingPage(): JSX.Element {
 
             <div className="text--center">
                 <div style={{ margin: "2rem 0px" }}>
-                    <h1>Tools for the creator economy.</h1>
-                    <h4>We build solutions that help improve the lives of creators.</h4>
+                    <h1>Tools for creators.</h1>
+                    <h4>We build solutions that help solve problems for creators.</h4>
                     {/* <div className="videoContainer">
                         <PlayIcon className="playIcon centerImg" />
                     </div> */}

@@ -25,7 +25,7 @@ const proReasons: ProReason[] = [
     },
     {
         title: "Easy cashout",
-        description: "Cashout the money you earned from song requests the same day."
+        description: "Cashout the money you earned from song requests the same week."
     }
 ]
 const SongRequests = () => {
