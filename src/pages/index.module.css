@@ -3,48 +3,187 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-image: url('/static/img/colourbox_hero_image.png');
-  background-size: cover;
-  background-repeat: no-repeat;
 
-  height: 50vh;
-
-  --ifm-hero-text-color: #ffffff;
-  flex: 1;
-  align-items: center;
-}
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .heroBanner {
-    background-image: url('/static/img/colourbox_hero_image_3.png');
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .heroBanner {
-    background-image: url('/static/img/colourbox_hero_image_3.png');
-  }
+.centerImg {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .buttons>a {
-  margin: 0.2rem;
+    margin: 0.2rem;
 
+}
+.centerBtn {
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button {
+    color: white;
+    display: block;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 4px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: white;
+}
+
+.button:hover {
+    background-color: white;
+    transition: 0.7s;
+    text-decoration: none;
+    color: black;
+}
+
+.box {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    transform: rotate(-40deg);
+    left: 0;
+}
+
+.wave {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    background: linear-gradient(160.88deg, #B8FBFF 19.61%, #3BE8B0 41.79%, #FFB900 78.15%);
+    width: 1500px;
+    height: 1300px;
+    margin-left: -150px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 7000ms infinite linear;
+}
+
+.waveThree {
+    z-index: -1;
+    animation: drift 7500ms infinite linear;
+    border-radius: 43%;
+    position: fixed;
+    background: linear-gradient(160.88deg, #B8FBFF 19.61%, #3BE8B0 41.79%, #FFB900 78.15%);
+    ;
+}
+
+.waveFour {
+    z-index: -1;
+    animation: drift 6500ms infinite linear;
+    border-radius: 43%;
+    left: 15%;
+    position: fixed;
+    background: linear-gradient(118.99deg, #FD636B 10.86%, #FD636B 77.62%);
+    ;
+}
+
+.waveTwo {
+    z-index: -1;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    opacity: .1;
+    background: #1BAFD0;
+    position: fixed;
+}
+
+.box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes anim {
+    0% {
+        -webkit-transform: scale(0, 0) rotateZ(-90deg);
+        transform: scale(0, 0) rotateZ(-90deg);
+        opacity: 0
+    }
+
+    30% {
+        -webkit-transform: scale(1, 1) rotateZ(0deg);
+        transform: scale(1, 1) rotateZ(0deg);
+        opacity: 1
+    }
+
+    50% {
+        -webkit-transform: scale(1, 1) rotateZ(0deg);
+        transform: scale(1, 1) rotateZ(0deg);
+        opacity: 1
+    }
+
+    80% {
+        -webkit-transform: scale(0, 0) rotateZ(90deg);
+        transform: scale(0, 0) rotateZ(90deg);
+        opacity: 0
+    }
+}
+
+@keyframes anim {
+    0% {
+        -webkit-transform: scale(0, 0) rotateZ(-90deg);
+        transform: scale(0, 0) rotateZ(-90deg);
+        opacity: 0
+    }
+
+    30% {
+        -webkit-transform: scale(1, 1) rotateZ(0deg);
+        transform: scale(1, 1) rotateZ(0deg);
+        opacity: 1
+    }
+
+    50% {
+        -webkit-transform: scale(1, 1) rotateZ(0deg);
+        transform: scale(1, 1) rotateZ(0deg);
+        opacity: 1
+    }
+
+    80% {
+        -webkit-transform: scale(0, 0) rotateZ(90deg);
+        transform: scale(0, 0) rotateZ(90deg);
+        opacity: 0
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .centerBtn {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 }

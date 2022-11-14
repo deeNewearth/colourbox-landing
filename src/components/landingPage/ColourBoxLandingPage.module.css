@@ -1,5 +1,5 @@
 .container_landing_page {
-    max-width: 750px;
+    max-width: 800px;
     text-align: center;
     margin: 30px auto;
 }
@@ -8,17 +8,61 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 30px;
+    column-gap: 25px;
 }
 
-.button {
-    background-color: #EEEEEE;
-    padding: 8px 20px;
+.card {
+    max-width: 30rem;
+    margin: 2.5rem auto;
+}
+
+.videoContainer {
+    background: #D9D9D9;
+    max-height: 547px;
+    min-height: 300px;
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.select {
+    background-color: #101010;
+    color: white;
+    margin-bottom: auto;
+    padding: 3px 30px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
+    border: 4px;
     cursor: pointer;
-    color: #1BAFD0;
+    border-style: solid;
+    border-color: #3BE8B0;
+}
+
+
+
+.imgCard {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.centerImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    background-color: #101010;
+    color: white;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 4px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #1BAFD0;
 }
 
 .button:hover {
@@ -27,6 +71,7 @@
     text-decoration: none;
     color: #ffffff;
 }
+
 
 .button_gradient {
     background-image: linear-gradient(to right, #1BAFD0, #FD636B, #FFB900, #3BE8B0);
@@ -38,25 +83,42 @@
     color: #ffffff;
 }
 
+.container {
+    margin: 2.5rem 0px;
+}
+
 .button_gradient:hover {
     color: #000000;
 }
 
 @media screen and (max-width: 1024px) {
     .container_landing_page {
-        max-width: 550px;
+        max-width: 750px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container_landing_page {
-        max-width: 600px;
+        max-width: 700px;
     }
+
+    .Flex {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
+    }
+
 }
 
 @media screen and (max-width: 540px) {
     .container_landing_page {
-        max-width: 400px;
+        max-width: 500px;
+    }
+
+    .Flex {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
     }
 }
 
